@@ -1,4 +1,5 @@
 import streamlit as st
+from reportlab.platypus import image
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet
@@ -66,6 +67,15 @@ def generate_pdf(data):
 
     content = []
 
+    # ------- LOGO SUTO -------
+    try:
+        logo = Image("logo_suto.png", width=120, height=50)
+        content.append(logo)
+    except:
+        content.append(Paragraph("SUTO", styles['Title']))
+
+    content.append(Spacer(1, 10))
+    # -------- TITLE ---------
     content.append(Paragraph("DEW POINT ENGINEERING PROPOSAL", styles['Title']))
     content.append(Spacer(1, 12))
 
