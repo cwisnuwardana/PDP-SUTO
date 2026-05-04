@@ -87,7 +87,8 @@ def generate_pdf(data):
 # =========================
 # UI
 # =========================
-st.title("🔥 SUTO Dew Point Sizing Tool PRO+ (Engineering Mode)")
+st.image("suto_logo.png" width=200)
+st.title("SUTO Dew Point Sizing Tool PRO+ (Engineering Mode)")
 
 col1, col2 = st.columns(2)
 
