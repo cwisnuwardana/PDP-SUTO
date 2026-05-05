@@ -92,10 +92,14 @@ def generate_pdf(data):
     content = []
 
     # LOGO
-    try:
-        content.append(Image("logo_suto.png", width=120, height=50))
-    except:
-        content.append(Paragraph("SUTO", styles['Title']))
+    import os
+
+logo_path = "logo_suto.png"
+
+if os.path.exists(logo_path):
+    content.append(Image(logo_path, width=120, height=50))
+else:
+    content.append(Paragraph("SUTO", styles['Title']))
 
     content.append(Spacer(1, 10))
     content.append(Paragraph("SUTO CONFIGURATION PROPOSAL", styles['Title']))
