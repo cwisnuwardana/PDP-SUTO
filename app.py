@@ -13,7 +13,7 @@ from datetime import datetime
 import io
 import os
 
-st.set_page_config(page_title= "SUTO Catalog Configurator", layout="wide")
+st.set_page_config(page_title= "SUTO Dewpoint Sensor Selection", layout="wide")
 
 # =========================
 # SENSOR
