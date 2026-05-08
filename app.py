@@ -30,6 +30,7 @@ st.set_page_config(
 # =========================================================
 # TITLE
 # =========================================================
+st.image("suto_logo.png", width=220)
 st.title("💧 PDP SUTO Selection Model")
 st.caption("S211 / S215 / S220 Dew Point Engineering Tool")
 
