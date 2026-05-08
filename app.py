@@ -13,7 +13,6 @@ from datetime import datetime
 import io
 import os
 
-st.image("suto_logo.png", width=220)
 st.set_page_config(page_title= "SUTO Catalog Configurator", layout="wide")
 
 # =========================
