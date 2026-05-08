@@ -14,7 +14,7 @@ import io
 import os
 
 st.image("suto_logo.png", width=220)
-st.set_page_config(page_title="SUTO Catalog Configurator", layout="wide")
+st.set_page_config(page_title= "SUTO Catalog Configurator", layout="wide")
 
 # =========================
 # SENSOR
@@ -144,7 +144,8 @@ def generate_pdf(data):
 # =========================
 # UI
 # =========================
-st.title("🔥 SUTO Catalog Configurator")
+st.image("suto_logo.png", width=220)
+st.title(" SUTO Catalog Configurator")
 
 col1, col2 = st.columns(2)
 
