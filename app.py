@@ -30,7 +30,7 @@ st.set_page_config(
 # =========================================================
 # TITLE
 # =========================================================
-st.title("💧 PDP SUTO Configurator")
+st.title("💧 PDP SUTO Selection Model")
 st.caption("S211 / S215 / S220 Dew Point Engineering Tool")
 
 
@@ -251,8 +251,8 @@ def generate_pdf(data):
 
         logo = Image(
             logo_path,
-            width=140,
-            height=55
+            width=330,
+            height=60
         )
 
         content.append(logo)
@@ -273,7 +273,7 @@ def generate_pdf(data):
     # =====================================
     content.append(
         Paragraph(
-            "SUTO CONFIGURATION PROPOSAL",
+            "SUTO PDP PROPOSAL",
             styles['Title']
         )
     )
