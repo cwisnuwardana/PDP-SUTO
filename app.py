@@ -198,10 +198,20 @@ def get_datasheet(sensor):
 def ambient_check(temp):
 
     if temp > 50:
-        return "⚠ Ambient too high"
 
-    if temp < 0:
-        return "⚠ Ambient too low"
+        return (
+            "⚠ Ambient too high (>50°C). "
+            "Recommended max ambient: 50°C. "
+            "Use cooling chamber / remote installation."
+        )
+
+    elif temp < 0:
+
+        return (
+            "⚠ Ambient too low (<0°C). "
+            "Recommended min ambient: 0°C. "
+            "Use heated enclosure if required."
+        )
 
     return "OK"
 
