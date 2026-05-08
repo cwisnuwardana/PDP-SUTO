@@ -180,9 +180,12 @@ if st.button("🚀 Generate Catalog Output"):
     }
 
     pdf = generate_pdf(report)
+elements = []
 
-    st.download_button(
-        "📄 Download Proposal",
-        pdf,
-        file_name="SUTO_Proposal.pdf"
-    )
+logo = Image("suto_logo.png")
+
+logo.drawHeight = 60
+logo.drawWidth = 180
+
+elements.append(logo)
+elements.append(Spacer(1, 20))
