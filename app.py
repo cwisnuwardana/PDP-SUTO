@@ -18,16 +18,10 @@ import os
 # =========================
 
 st.set_page_config(
-    page_title="SUTO Dewpoint Sensor Selection",
+    page_title="💧SUTO Dewpoint Sensor Selection",
     page_icon="suto_logo.png",
     layout="wide",
 )
-
-# =========================
-# TITLE
-# =========================
-
-st.title("💧SUTO PDP")
 
 # =========================
 # SENSOR
