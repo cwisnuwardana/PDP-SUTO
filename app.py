@@ -86,31 +86,51 @@ def get_datasheet(sensor):
 # PDF GENERATOR
 # =========================
 def generate_pdf(data):
+
     buffer = io.BytesIO()
+
     doc = SimpleDocTemplate(buffer)
+
     styles = getSampleStyleSheet()
+
     content = []
 
-    # LOGO
-    import os
+    # ===== LOGO =====
+    logo_path = "logo_suto.png"
 
-logo_path = "logo_suto.png"
-
-if os.path.exists(logo_path):
-    content.append(Image(logo_path, width=120, height=50))
-else:
-    content.append(Paragraph("SUTO", styles['Title']))
+    if os.path.exists(logo_path):
+        content.append(Image(logo_path, width=120, height=50))
+    else:
+        content.append(Paragraph("SUTO", styles['Title']))
 
     content.append(Spacer(1, 10))
-    content.append(Paragraph("SUTO CONFIGURATION PROPOSAL", styles['Title']))
+
+    # ===== TITLE =====
+    content.append(
+        Paragraph(
+            "SUTO CONFIGURATION PROPOSAL",
+            styles['Title']
+        )
+    )
+
     content.append(Spacer(1, 12))
 
-    table = Table([[k,str(v)] for k,v in data.items()])
-    table.setStyle([('GRID',(0,0),(-1,-1),0.5,colors.black)])
+    # ===== TABLE =====
+    table_data = [[k, str(v)] for k, v in data.items()]
+
+    table = Table(table_data)
+
+    table.setStyle([
+        ('GRID', (0,0), (-1,-1), 0.5, colors.black)
+    ])
+
     content.append(table)
 
+    # ===== BUILD PDF =====
     doc.build(content)
+
     buffer.seek(0)
+
     return buffer
 
 # =========================
