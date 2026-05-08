@@ -191,7 +191,7 @@ if st.button("🚀 Generate Catalog Output"):
             st.download_button(
                 f"📥 Download {sensor} Datasheet",
                 f,
-                file_name=f"{sensor}_datasheet.pdf"
+                file_name=f"{sensor}SUTO_DP 211-215-220_EN_24-1.pdf"
             )
     else:
         st.warning("Datasheet not found")
