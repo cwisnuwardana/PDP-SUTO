@@ -144,7 +144,7 @@ def generate_pdf(data):
 # UI
 # =========================
 st.image("suto_logo.png", width=220)
-st.title(" SUTO Catalog Configurator")
+st.title("SUTO Dewpoint Sensor Selection")
 
 col1, col2 = st.columns(2)
 
