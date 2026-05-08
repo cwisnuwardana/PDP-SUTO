@@ -18,9 +18,9 @@ import os
 # =========================
 
 st.set_page_config(
-    page_title= "SUTO Dewpoint Sensor Selection", layout="wide"
-    page_icon="suto_logo.png"
-    layout="wide"
+    page_title="SUTO Dewpoint Sensor Selection",
+    page_icon="suto_logo.png",
+    layout="wide",
 )
 
 # =========================
