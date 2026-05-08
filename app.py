@@ -13,7 +13,15 @@ from datetime import datetime
 import io
 import os
 
-st.set_page_config(page_title= "SUTO Dewpoint Sensor Selection", layout="wide")
+# =========================
+# PAGE CONFIG
+# =========================
+
+st.set_page_config(
+    page_title= "SUTO Dewpoint Sensor Selection", layout="wide"
+    page_icon="suto_logo.png"
+    layout="wide"
+)
 
 # =========================
 # SENSOR
