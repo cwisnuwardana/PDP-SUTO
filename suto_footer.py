@@ -14,7 +14,7 @@ def show_suto_footer():
             padding:10px;
         ">
         SUTO iTEC Indonesia<br>
-        Industrial Reporting & Analytics Engine<br>
+        Industrial Pressure Dew Point Selection<br>
         Version 1.0<br> 
         Created by Cahyadi Wisnu Wardana. MM
         </div>
