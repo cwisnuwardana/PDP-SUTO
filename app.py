@@ -2,8 +2,9 @@ import streamlit as st
 import os
 import io
 
+from suto_footer import (
+    show_suto_footer
 from datetime import datetime
-
 from reportlab.platypus import (
     SimpleDocTemplate,
     Paragraph,
@@ -616,3 +617,4 @@ if st.button("🚀 Generate Catalog Output"):
         file_name="SUTO_Proposal.pdf",
         mime="application/pdf"
     )
+show_suto_footer()
