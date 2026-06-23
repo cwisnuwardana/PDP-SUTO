@@ -4,6 +4,7 @@ import io
 
 from suto_footer import (
     show_suto_footer
+)
 from datetime import datetime
 from reportlab.platypus import (
     SimpleDocTemplate,
